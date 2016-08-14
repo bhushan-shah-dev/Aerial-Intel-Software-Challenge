@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = System.Configuration.ConfigurationManager.AppSettings["Title"];
+
+    var formViewTitle = System.Configuration.ConfigurationManager.AppSettings["FormViewTitle"];
+    var mapViewTitle = System.Configuration.ConfigurationManager.AppSettings["MapVIewTitle"];
+}
+
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#form" data-toggle="tab" aria-expanded="true">@formViewTitle</a></li>
+    <li class=""><a href="#map" data-toggle="tab" aria-expanded="false">@mapViewTitle</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade active in" id="form">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @Html.Partial("~/Views/Home/_FormView.cshtml")
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="map">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @Html.Partial("~/Views/Home/_MapView.cshtml")
+            </div>
+        </div>
+    </div>
+</div>
