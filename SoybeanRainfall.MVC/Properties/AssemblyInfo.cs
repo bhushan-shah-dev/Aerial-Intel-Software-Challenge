@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SoybeanRainfall")]
+[assembly: AssemblyTitle("SoybeanRainfall.MVC")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SoybeanRainfall")]
+[assembly: AssemblyProduct("SoybeanRainfall.MVC")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5fe5264d-048d-46d7-8c49-3f70119bccec")]
+[assembly: Guid("f8419f7f-dc3a-4ede-9b57-bde4e5277826")]
 
 // Version information for an assembly consists of the following four values:
 //

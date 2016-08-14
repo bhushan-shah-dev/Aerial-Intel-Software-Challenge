@@ -1,0 +1,30 @@
+﻿@model SoybeanRainfall.ViewModels.FormViewModel
+
+@using (Html.BeginForm("GetRainfall", "Home", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <fieldset>
+        <div class="form-group">
+            @Html.LabelFor(model => model.SelectedState, new { @class = "col-lg-2 control-label" })
+            <div class="col-lg-10">
+                @Html.DropDownListFor(model => model.SelectedState, Model.States.Select(s =>
+                                           new SelectListItem { Value = s.Id.ToString(), Text = s.Name }),
+                                           Model.EmptySelectionItem,
+                                           new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.SelectedCounty, new { @class = "col-lg-2 control-label" })
+            <div class="col-lg-10">
+                @Html.DropDownListFor(model => model.SelectedCounty, Model.Counties.Select(s =>
+                                           new SelectListItem { Value = s.Id.ToString(), Text = s.Name }),
+                                           new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Reset</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+}
